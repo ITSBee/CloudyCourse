@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+/* header */
+.header {
+	height: 40px;
+	padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	-webkit-box-shadow: 0 3px 3px #eee;
+		 -moz-box-shadow: 0 3px 3px #eee;
+					box-shadow: 0 3px 3px #eee;
+}
+
+/* test */.header .container { 
+	/*background-color: #f00; */
+}
+
+.header .container>div {
+	float: left;
+}
+
+.logo	{
+	width: 280px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #ccc;
+	background: #eee;
+}
+
+.search-bar input {
+	width: 298px;
+	height: 34px;
+	margin-left: 20px;
+	border-radius: 3px;
+}
+
+/*.input-search-bar {
+	padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555;
+  text-align: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}*/
+
+.nav {
+	margin-left: 20px;
+}
+
+.nav ul>li {
+	float: left;
+	text-align: center;
+}
+
+.nav ul>li a {
+	display: inline-block;
+	width: 85px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 12px;
+	line-height: 40px;
+	color: #ccc;
+}
+.nav ul>li a:hover { color: #5cb85c; }
+
+.header .container .user-info {
+	float: right;
+	width: 120px;
+	height: 20px;
+	padding-top: 5px;
+	line-height: 20px;
+}
+
+.user-info span {
+	display: inline-block;
+	width: 40px;
+	text-align: right;
+	padding-left: 10px;
+	color: #999;
+	cursor: pointer;
+}
+
+.user-info span:hover {
+	color: #5cb85c;
+}
+
+/* main */
+.main {
+	/*margin: 20px auto;*/
+	padding: 20px 0;
+}
+
+.subnav-box>div,
+.class-title>ul>li {
+	float: left;
+}
+
+.all {
+	width: 260px;
+	height: 49px;
+	margin-right: 20px;
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 50px;
+	color: #fff;
+	background: #2b333b;
+	border-bottom: 1px solid #fff;
+}
+
+.all a {
+	padding-left: 5px;
+	color: #fff;
+}
+
+.promotion, 
+.sort {
+	height: 50px;
+	line-height: 50px;
+}
+
+.promotion {
+	float: left;
+	margin-right: 20px;
+}
+
+.promotion>li {
+	padding-right: 20px;
+}
+
+.sort {
+	float: right;
+	font-size: 16px;
+}
+
+.sort>li { padding-left: 42px; }
+
+/* class-nav */
+.class-nav,
+.slider { float: left; }
+.class-nav li {
+	width: 260px;
+	height: 49px;
+	padding-left: 20px;
+	font-size: 16px;
+	line-height: 50px;
+	color: #ccc;
+	background: #2b333b;
+	border-bottom: 1px solid #fff;
+}
+
+.class-nav a {
+	color: #ccc;
+	font-size: 12px;
+}
+
+.class-nav a:hover { color: #5cb85c; }
+
+.class-nav .main-title { 
+	color: #fff;
+	font-size: 16px; 
+}
+
+.slider {
+	width: 900px;
+	height: 349px;
+	color: #784f67;
+	line-height: 349px;
+	text-align: center;
+	background: #8c5d79;
+	border-bottom: 1px solid #fff;
+}
+
+/* majors */
+.majors ul>li {
+	float: left;
+	width: 378px;
+	height: 70px;
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align: center;
+	line-height: 70px;
+	border: 1px solid #ccc;
+	-webkit-border-radius: 3px;
+		 -moz-border-radius: 3px;
+	background-color: #eee;
+	cursor: pointer;
+}
+
+.majors ul>li:hover {
+	-webkit-box-shadow: 0 3px 5px #ccc;
+		 -moz-box-shadow: 0 3px 5px #ccc;
+					box-shadow: 0 3px 5px #ccc;
+}
+
+.majors ul li:nth-child(3),
+.majors ul li:last-child {
+	margin-right: 0;
+}
+
+/* free */
+.free { margin: 20px 0; }
+.free h2 {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.free h2>span {
+	margin-left: 10px;
+	padding-left: 10px;
+	color: #ccc;
+	text-transform: uppercase;
+	font-weight: lighter;
+	border-left: 2px solid #5cb85c;
+}
+
+.free>div>ul>li { 
+	float: left; 
+	width: 280px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.free>div>ul>li:nth-child(4),
+.free>div>ul>li:nth-child(8) { margin-right: 0; }
+
+.class-item {
+	overflow: hidden;
+	background-color: #efefef;
+	-webkit-border-radius: 3px;
+		 -moz-border-radius: 3px;
+	cursor: pointer;
+}
+
+.class-item:hover {
+	-webkit-box-shadow: 0 3px 5px #ccc;
+		 -moz-box-shadow: 0 3px 5px #ccc;
+					box-shadow: 0 3px 5px #ccc;
+}
+
+.class-item .pic {
+	height: 160px;
+	margin-bottom: 10px;
+	line-height: 160px;
+	text-align: center;
+	background: #ddd;
+}
+
+.class-info {
+	padding: 0 15px 10px;
+}
+
+.class-info h3 {
+	float: left;
+	font-size: 18px;
+}
+
+.class-info span { 
+	float: right;
+	margin-right: 2px;
+}
+
+.class-m { font-size: 12px; }
+
+.class-m div { float: left; }
+
+.class-m .price {
+	 float: right; 
+	 color: #f00;
+	 vertical-align: bottom;
+}
+
+.price span {
+	font-size: 24px;
+}

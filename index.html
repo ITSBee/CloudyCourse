@@ -3,15 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+	<!-- <link rel="stylesheet" href="node_modules/normalize.css/normalize.css"> -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<title>CloudyCourse</title>
 </head>
 <body>
 	<div class="header">
 		<div class="container clearfix">
-			<div class="logo">logo</div>
+			<div class="logo"><i class="fa fa-picture-o"></i></div>
 			<div class="search-bar">
 <!-- 				<div class="input-group margin-bottom-sm">
 				  <input class="form-control" type="text" placeholder="Email address">
@@ -32,44 +33,237 @@
 				<span><i class="fa fa-user fa-2x"></i></span>
 			</div>
 		</div>
-	</div>
-	<div class="container main">
-		<div class="clearfix">
-			<div class="all">
-				<i class="fa fa-align-justify"></i>
-				<a href="#">全部课程</a></div>
-			<div class="class-title clearfix">
-				<ul class="promotion">
-					<li><a href="#">秒杀</a></li>
-					<li><a href="#">团购</a></li>
-					<li><a href="#">折扣</a></li>
-					<li><a href="#">红包</a></li>
-				</ul>
-				<ul class="sort">
-					<li><a href="#">免费好课</a></li>
-					<li><a href="#">直播课堂</a></li>
-					<li><a href="#">微专业</a></li>
-					<li><a href="#">考证专区</a></li>
-					<li><a href="#">院校合作专业</a></li>
-					<li><a href="#">精品教材</a></li>
-				</ul>
-			</div>
-		</div> <!-- /.all&.promotion&.sort -->
+	</div> <!-- /.header -->
 
-		<div>
-			<div class="class-nav">
+	<div class="main">
+		<div class="container">
+			<div class="subnav-box clearfix">
+				<div class="all">
+					<i class="fa fa-align-justify"></i>
+					<a href="#">全部课程</a>
+				</div>
+				<div class="class-title clearfix">
+					<ul class="promotion">
+						<li><a href="#">秒杀</a></li>
+						<li><a href="#">团购</a></li>
+						<li><a href="#">折扣</a></li>
+						<li><a href="#">红包</a></li>
+					</ul>
+					<ul class="sort">
+						<li><a href="#">免费好课</a></li>
+						<li><a href="#">直播课堂</a></li>
+						<li><a href="#">微专业</a></li>
+						<li><a href="#">考证专区</a></li>
+						<li><a href="#">院校合作专业</a></li>
+						<li><a href="#">精品教材</a></li>
+					</ul>
+				</div>
+			</div> <!-- /.all&.promotion&.sort -->
+			
+			<div class="clearfix">
+				<div class="class-nav">
+					<ul>
+						<li><a class="main-title" href="#">最新技术</a> / <a href="#">人工智能</a> / <a href="#">Python</a></li>
+						<li><a class="main-title" href="#">前端开发</a> / <a href="#">小程序</a> / <a href="#">前端框架</a></li>
+						<li><a class="main-title" href="#">后端开发</a> / <a href="#">.NET</a> / <a href="#">Java Web</a></li>
+						<li><a class="main-title" href="#">移动开发</a> / <a href="#">Android</a> / <a href="#">iOS</a></li>
+						<li><a class="main-title" href="#">网络安全</a> / <a href="#">运维</a> / <a href="#">测试</a></li>
+						<li><a class="main-title" href="#">元计算</a> / <a href="#">大数据</a> / <a href="#">容器</a></li>
+						<li><a class="main-title" href="#">UI设计</a> / <a href="#">网页设计</a> / <a href="#">平面设计</a></li>
+					</ul>
+				</div>
+				<div class="slider"><i class="fa fa-picture-o fa-3x"></i></div>
+			</div> <!-- /.class-nav -->
+			
+			<div class="majors clearfix">
 				<ul>
-					<li><a class="main-title" href="#">最新技术</a> / <a href="#">人工智能</a> / <a href="#"></a></li>
-					<li><a class="main-title" href="#">前端开发</a> / <a href="#">nav</a> / <a href="#">nav</a></li>
-					<li><a class="main-title" href="#">后端开发</a> / <a href="#">nav</a> / <a href="#">nav</a></li>
-					<li><a class="main-title" href="#">移动开发</a> / <a href="#">nav</a> / <a href="#">nav</a></li>
-					<li><a class="main-title" href="#">网络安全</a> / <a href="#">nav</a> / <a href="#">nav</a></li>
-					<li><a class="main-title" href="#">元计算</a> / <a href="#">nav</a> / <a href="#">nav</a></li>
-					<li><a class="main-title" href="#">UI设计</a> / <a href="#">nav</a> / <a href="#">nav</a></li>
+					<li><a href="#"><i class="fa fa-picture-o"></i> 前端开发工程师</a></li>
+					<li><a href="#"><i class="fa fa-picture-o"></i> .NET开发工程师</a></li>
+					<li><a href="#"><i class="fa fa-picture-o"></i> JAVA开发工程师</a></li>
+					<li><a href="#"><i class="fa fa-picture-o"></i> 网络安全工程师</a></li>
+					<li><a href="#"><i class="fa fa-picture-o"></i> 云计算工程师</a></li>
+					<li><a href="#"><i class="fa fa-picture-o"></i> 大数据工程师</a></li>
 				</ul>
+			</div> <!-- /.majors -->
+
+			<div class="free">
+				<h2>免费好课<span>Free courses</span></h2>
+				<div>
+					<ul class="clearfix">
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="class-item">
+								<div class="pic"><a href="#"><i class="fa fa-picture-o"></i></a></div>
+								<div class="class-info">
+									<div class="clearfix">
+										<h3><a href="#">三级标题课程名称</a></h3>
+										<span>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+											<i class="fa fa-star"></i>
+										</span>
+									</div>
+									<div class="class-m clearfix">
+										<div>课程时长</div>
+										<div class="price">￥<span>2580</span></div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
-			<div class="slider"></div>
-		</div>
+
+		</div> <!-- /.container -->
+
 	</div> <!-- /.main -->
 </body>
 </html>
