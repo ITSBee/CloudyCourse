@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-.container { 	background-color: #fafafa; }
+/*.container { 	background-color: #fafafa; }*/
 
 /* header */
 .header {
@@ -175,28 +175,65 @@
 /* majors */
 .majors ul>li {
 	float: left;
-	width: 378px;
+	width: 380px;
 	height: 70px;
 	margin-top: 20px;
 	margin-right: 20px;
 	text-align: center;
+	text-indent: -9999px;
 	line-height: 70px;
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 	-webkit-border-radius: 3px;
 		 -moz-border-radius: 3px;
-	background-color: #eee;
+	/*background-color: #eee;*/
 	cursor: pointer;
 }
 
 .majors ul>li:hover {
-	-webkit-box-shadow: 0 3px 5px #ccc;
-		 -moz-box-shadow: 0 3px 5px #ccc;
-					box-shadow: 0 3px 5px #ccc;
+	-webkit-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+		 -moz-box-shadow: 0 3px 5px rgba(0,0,0,.5);
+					box-shadow: 0 3px 5px rgba(0,0,0,.5);
 }
 
 .majors ul li:nth-child(3),
 .majors ul li:last-child {
 	margin-right: 0;
+}
+
+.majors ul li:nth-child(1) {
+	background: url(../img/f2e.jpg) center;
+	-webkit-background-size: cover;
+					background-size: cover;
+}
+
+.majors ul li:nth-child(2) {
+	background: url(../img/NET.jpg) center;
+	-webkit-background-size: cover;
+					background-size: cover;
+}
+
+.majors ul li:nth-child(3) {
+	background: url(../img/Java.jpg) center;
+	-webkit-background-size: cover;
+					background-size: cover;
+}
+
+.majors ul li:nth-child(4) {
+	background: url(../img/Security.jpg) center;
+	-webkit-background-size: cover;
+					background-size: cover;
+}
+
+.majors ul li:nth-child(5) {
+	background: url(../img/cloud.jpg) center;
+	-webkit-background-size: cover;
+					background-size: cover;
+}
+
+.majors ul li:nth-child(6) {
+	background: url(../img/Data.jpg) center;
+	-webkit-background-size: cover;
+					background-size: cover;
 }
 
 /* free & live & micro-majors & teachers & cadets & partners */
@@ -258,12 +295,16 @@
 .teachers>div>ul>li:nth-child(5),
 .cadets>div>ul>li:nth-child(6) { margin-right: 0; }
 
+
 .class-item {
 	overflow: hidden;
-	background-color: #efefef;
+	background-color: #f9f9f9;
 	-webkit-border-radius: 3px;
 		 -moz-border-radius: 3px;
-	cursor: pointer;
+	/*cursor: pointer;*/
+	-webkit-transition: all 0.3s;
+			 -o-transition: all 0.3s;
+					transition: all 0.3s;
 }
 
 .class-item:hover {
@@ -272,12 +313,66 @@
 					box-shadow: 0 3px 5px #ccc;
 }
 
+.micro-majors .album .class-item,
+.certification .album .class-item { 
+	height: 507px;
+	color: #fff; 
+}
+
+.micro-majors .album .class-item {
+	background: #f00 url(../img/album01.jpg);
+}
+
+.certification .album .class-item {
+	background: #f00 url(../img/album02.jpg);
+}
+
+.micro-majors .album .class-item h4,
+.certification .album .class-item h4 {
+	margin-top: 380px;
+	padding-left: 40px;
+	font-size: 36px;
+}
+.micro-majors .album .class-item p,
+.certification .album .class-item p {
+	margin-top: 10px;
+	padding-left: 40px;
+	font-size: 18px;
+}
+
+.micro-majors .album .class-item:hover,
+.certification .album .class-item:hover {
+	-webkit-box-shadow: 0 3px 5px #999;
+		 -moz-box-shadow: 0 3px 5px #999;
+					box-shadow: 0 3px 5px #999;
+}
+
 .class-item .pic {
+	overflow: hidden;
 	height: 160px;
 	margin-bottom: 10px;
 	line-height: 160px;
 	text-align: center;
 	background: #ddd;
+}
+
+.class-item .pic img {
+ height: 100%; 
+ -webkit-transition: all 0.3s;
+		  -o-transition: all 0.3s;
+				 transition: all 0.3s;
+}
+
+.class-item:hover .pic img {
+	-webkit-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			 -o-transform: scale(1.1);
+					transform: scale(1.1);
+}
+
+
+.class-item .head-icon img {
+	height: 100%; 
 }
 
 .class-info {
@@ -287,6 +382,15 @@
 .class-info h3 {
 	float: left;
 	font-size: 18px;
+}
+
+.class-info h3>a {
+	display: inline-block;
+	width: 150px;
+	height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .class-info span { 
@@ -324,7 +428,13 @@
 .teachers .head-icon {
 	width: 100%;
 	height: 220px;
+	margin: 0 auto;
 	background: #ddd;
+}
+
+.teachers .head-icon img{ 
+	height: 100%; 
+	margin-left: -24px;
 }
 
 .head-icon,
@@ -333,6 +443,25 @@
 .person {
 	width: 160px;
 	margin: 10px auto 20px;
+}
+
+.cadets .class-item .head-icon {
+	overflow: hidden; 
+	border: 5px solid #ddd;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.cadets .class-item:hover .head-icon {
+	border: 5px solid #5cb85c;
+	-webkit-box-shadow: 0 5px 10px rgba(0,0,0,.5);
+					box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.cadets .class-item:hover .person>h3>a,
+.cadets .class-item:hover .person>p {
+	color: #5cb85c;
 }
 
 .person h3 {
@@ -393,5 +522,4 @@
 	width: 80px;
 	height: 80px;
 	margin-top: 5px;
-	background-color: #ddd;
 }
