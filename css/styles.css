@@ -201,14 +201,31 @@
 	margin-right: 0;
 }
 
-/* free */
-.free { margin: 20px 0; }
-.free h2 {
+/* free & live & micro-majors & teachers & cadets */
+.free,
+.live,
+.micro-majors,
+.certification,
+.cadets { margin: 20px 0; }
+
+.free h2,
+.live h2,
+.micro-majors h2,
+.certification h2,
+.teachers h2,
+.cadets h2 {
 	margin-bottom: 20px;
 	font-size: 24px;
 }
 
-.free h2>span {
+.more { float: right; }
+
+.free h2>span,
+.live h2>span,
+.micro-majors h2>span,
+.certification h2>span,
+.teachers h2>span,
+.cadets h2>span {
 	margin-left: 10px;
 	padding-left: 10px;
 	color: #ccc;
@@ -217,14 +234,28 @@
 	border-left: 2px solid #5cb85c;
 }
 
-.free>div>ul>li { 
+.free>div>ul>li,
+.live>div>ul>li,
+.micro-majors>div>ul>li,
+.certification>div>ul>li,
+.cadets>div>ul>li { 
 	float: left; 
 	width: 280px;
 	margin-right: 20px;
 	margin-bottom: 20px;
 }
+
+
 .free>div>ul>li:nth-child(4),
-.free>div>ul>li:nth-child(8) { margin-right: 0; }
+.free>div>ul>li:nth-child(8),
+.live>div>ul>li:nth-child(4),
+.live>div>ul>li:nth-child(8),
+.micro-majors>div>ul>li:nth-child(4),
+.micro-majors>div>ul>li:nth-child(7),
+.certification>div>ul>li:nth-child(4),
+.certification>div>ul>li:nth-child(7),
+.teachers>div>ul>li:nth-child(5),
+.cadets>div>ul>li:nth-child(6) { margin-right: 0; }
 
 .class-item {
 	overflow: hidden;
@@ -274,4 +305,51 @@
 
 .price span {
 	font-size: 24px;
+}
+
+.teachers>div>ul>li {
+	float: left;
+	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.album .class-item {
+	width: 280px;
+	height: 495px;
+	background: #ddd;
+}
+
+.head-icon {
+	width: 120px;
+	height: 120px;
+	margin: 40px auto;
+	border-radius: 50%;
+	background-color: #ddd;
+}
+
+.head-icon,
+.person {
+	text-align: center;
+}
+
+.person {
+	width: 160px;
+	margin: 10px auto 20px;
+}
+
+.person h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.person p {
+	margin: 10px;
+}
+
+.cadets>div>ul>li {
+	float: left;
+	width: 180px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 }
