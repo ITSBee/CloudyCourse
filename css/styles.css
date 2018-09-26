@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+.container { 	background-color: #fafafa; }
+
 /* header */
 .header {
 	height: 40px;
@@ -8,10 +10,6 @@
 	-webkit-box-shadow: 0 3px 3px #eee;
 		 -moz-box-shadow: 0 3px 3px #eee;
 					box-shadow: 0 3px 3px #eee;
-}
-
-/* test */.header .container { 
-	/*background-color: #f00; */
 }
 
 .header .container>div {
@@ -201,19 +199,21 @@
 	margin-right: 0;
 }
 
-/* free & live & micro-majors & teachers & cadets */
+/* free & live & micro-majors & teachers & cadets & partners */
 .free,
 .live,
 .micro-majors,
 .certification,
-.cadets { margin: 20px 0; }
+.cadets,
+.partners { margin: 20px 0; }
 
 .free h2,
 .live h2,
 .micro-majors h2,
 .certification h2,
 .teachers h2,
-.cadets h2 {
+.cadets h2,
+.partners h2 {
 	margin-bottom: 20px;
 	font-size: 24px;
 }
@@ -225,7 +225,8 @@
 .micro-majors h2>span,
 .certification h2>span,
 .teachers h2>span,
-.cadets h2>span {
+.cadets h2>span,
+.partners h2>span {
 	margin-left: 10px;
 	padding-left: 10px;
 	color: #ccc;
@@ -320,18 +321,14 @@
 	background: #ddd;
 }
 
-.head-icon {
-	width: 120px;
-	height: 120px;
-	margin: 40px auto;
-	border-radius: 50%;
-	background-color: #ddd;
+.teachers .head-icon {
+	width: 100%;
+	height: 220px;
+	background: #ddd;
 }
 
 .head-icon,
-.person {
-	text-align: center;
-}
+.person { text-align: center; }
 
 .person {
 	width: 160px;
@@ -352,4 +349,49 @@
 	width: 180px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+}
+
+.cadets .head-icon {
+	width: 120px;
+	height: 120px;
+	margin: 30px auto;
+	border-radius: 50%;
+	background-color: #ddd;
+}
+
+.cadets p {
+	text-align: justify;
+	overflow: hidden;
+	-ms-text-overflow: ellipsis;
+			text-overflow: ellipsis;
+}
+
+.institutions a {
+	display: inline-block;
+	/*width: 160px;*/
+	height: 30px;
+	line-height: 30px;
+	margin-right: 30px;
+}
+
+.footer {
+	padding: 40px 0;
+	background: #eee;
+}
+
+.footer p {
+	height: 30px;
+	line-height: 30px;
+}
+
+.footer a {
+	margin-right: 10px;
+}
+
+.footer .code {
+	float: right;
+	width: 80px;
+	height: 80px;
+	margin-top: 5px;
+	background-color: #ddd;
 }
