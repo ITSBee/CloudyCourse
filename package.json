@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ITSBee/CloudyCourse#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
     "normalize.css": "^8.0.0"
   }
 }

@@ -29,8 +29,15 @@
 				</ul>
 			</div>
 			<div class="user-info">
-				<span><i class="fa fa-shopping-cart fa-2x"></i></span>
-				<span><i class="fa fa-user fa-2x"></i></span>
+				<div class="cart">
+					<i id="cart" class="fa fa-shopping-cart fa-2x"></i>
+					<div id="cartContent" class="content">购物车内容</div>
+				</div>
+				<div class="profile">
+					<i id="profile" class="fa fa-user fa-2x"></i>
+					<div id="profileContent" class="content">个人中心内容</div>
+				</div>
+
 			</div>
 		</div>
 	</div> <!-- /.header -->
@@ -72,7 +79,30 @@
 						<li><a class="main-title" href="#">UI设计</a> / <a href="#">网页设计</a> / <a href="#">平面设计</a></li>
 					</ul>
 				</div>
-				<div class="slider"><i class="fa fa-picture-o fa-3x"></i></div>
+				<div class="slider">
+					<div id="slider-container" class="slider-container">
+						<div class="list" style="left: -900px">
+							<img src="img/banner05.jpg" alt="">
+							<img src="img/banner01.jpg" alt="">
+							<img src="img/banner02.jpg" alt="">
+							<img src="img/banner03.jpg" alt="">
+							<img src="img/banner04.jpg" alt="">
+							<img src="img/banner05.jpg" alt="">
+							<img src="img/banner01.jpg" alt="">
+						</div>
+						<div id="pagination" class="pagination">
+							<span class="active"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div id="button" class="button">
+							<a id="pre" href="javascript:;">&lt;</a>
+							<a id="next" href="javascript:;">&gt;</a>
+						</div>
+					</div>
+				</div> <!-- /.slider -->
 			</div> <!-- /.class-nav -->
 			
 			<div class="majors clearfix">
@@ -857,7 +887,7 @@
 					<h2>合作院校<span>Partners & Institutions</span></h2>
 				</div>
 				<div class="institutions"> <a href="#" target="blank">鹤壁职业技术学院</a> <a href="#" target="blank">南阳农业职业学院</a> <a href="#" target="blank">驻马店职业技术学院</a> <a href="#" target="blank">濮阳职业技术学院</a> <a href="#" target="blank">永城职业学院</a> <a href="#" target="blank">湖北开放职业学院</a> <a href="#" target="blank">曹妃甸职业技术学院</a> <a href="#" target="blank">安阳职业技术学院</a> <a href="#" target="blank">湖北文理学院理工学院</a> <a href="#" target="blank">三门峡社会管理职业学院</a> <a href="#" target="blank">鹤壁能源化工职业学院</a> <a href="#" target="blank">许昌职业技术学院</a> <a href="#" target="blank">襄阳汽车职业技术学院	</a> <a href="#" target="blank">周口职业技术学院</a> <a href="#" target="blank">漯河职业技术学院</a> <a href="#" target="blank">山西运城农业职业学院</a> <a href="#" target="blank">长江艺术工程职业学院</a> <a href="#" target="blank">平顶山职业技术学院</a> <a href="#" target="blank">渭南职业技术学院</a> </div>
-			</div>
+			</div> <!-- /.partners -->
 
 		</div> <!-- /.container -->
 
@@ -872,6 +902,9 @@
 				<p>&copy; 2018 xxxxxxxx.com	京ICP备00000000号-00</p>
 			</div>
 		</div>
-	</div>
+	</div> <!-- /.footer -->
+
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="js/static.js"></script>
 </body>
 </html>

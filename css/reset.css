@@ -43,6 +43,11 @@ input[type="password"]:focus {
 				  box-shadow: 0 0 3px #5cb85c;
 }
 
+img {
+  margin: 0;
+  padding: 0;
+}
+
 ::-webkit-input-placeholder { 
   color: #999; 
 } 
